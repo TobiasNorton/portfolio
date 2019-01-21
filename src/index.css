@@ -1,0 +1,628 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: hsla(127, 50%, 50%, 1); */
+  background-color: white;
+}
+/* 
+@font-face {
+  font-family: 'Good Vibes';
+  src: url('./goodvibes.ttf');
+} */
+
+button:hover {
+  cursor: pointer;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.main {
+  background-image: url('/aleksandar-jason-137349-unsplash.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 3.5em);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
+}
+
+.scroll-tab {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 15px 15px 0 0;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  margin: 1rem;
+  text-align: center;
+}
+
+.sexy-line {
+  background-color: white;
+  height: 1px;
+  width: 5rem;
+}
+
+.caption {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  margin: 1rem;
+}
+
+.nav-bar {
+  text-align: right;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: hsla(127, 50%, 50%, 1); */
+  background-color: black;
+  font-family: 'Lato', sans-serif;
+  height: 3.5rem;
+}
+
+.nav-bar p {
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 1.5rem;
+  margin-right: 1rem;
+}
+
+.nav-bar p:hover {
+  cursor: pointer;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  margin: 0 1rem 0 1rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.nav-bar a.menu-item {
+  margin: 0 0 2rem 0;
+}
+
+/* .hamburger {
+  margin-right: 1rem;
+  display: none;
+}
+
+.hamburger span {
+  width: 40px;
+  height: 6px;
+  background-color: white;
+  display: block;
+  margin: 4px 0 4px 0;
+} */
+
+/* .side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+} */
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 0.8rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.3rem;
+  color: white;
+  margin: 0;
+  font-weight: normal;
+  font-family: 'Lato', sans-serif;
+}
+
+h4 {
+  position: absolute;
+  bottom: 0px;
+  font-family: 'Lato', sans-serif;
+}
+
+button {
+  font-size: 1.2rem;
+  color: white;
+  background-color: hsl(200, 100%, 60%);
+  width: 14rem;
+  padding: 0.7rem;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+}
+
+.main button {
+  margin-bottom: 2rem;
+}
+
+.arrow {
+  width: 2.5rem;
+  justify-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* margin: 0 auto 0 auto; */
+  /* transform-origin: bottom; */
+  position: absolute;
+  bottom: 30px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.about-me {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.threshold {
+  background-color: black;
+  width: 100%;
+  padding: 3rem 0 3rem 0;
+  margin: 0;
+}
+
+.about-me-header {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.about-me-line {
+  background-color: black;
+  height: 1px;
+  width: 3rem;
+}
+
+.portrait {
+  width: 18rem;
+  border-radius: 100%;
+  margin: 3rem 0 2rem 0;
+}
+
+.about-me p {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  max-width: 32rem;
+  text-align: center;
+  margin-bottom: 5rem;
+  line-height: 1.5rem;
+}
+
+.portfolio {
+  background-color: hsla(185, 60%, 94%, 1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-header {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.thumbnail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 70rem;
+  margin: 3rem 0 3rem 0;
+}
+
+.thumbnail {
+  width: 20rem;
+  margin: 1.5rem;
+  box-shadow: 0px 4px 4px hsla(185, 0%, 20%, 0.4);
+}
+
+.thumbnail:hover {
+  color: black;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+.technology-header {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.tech-line {
+  background-color: black;
+  height: 1px;
+  width: 3rem;
+}
+
+img.rails {
+  color: black;
+  width: 8rem;
+}
+
+p.rails-caption {
+  position: absolute;
+  bottom: 3rem;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+
+.tech i {
+  /* width: 3rem; */
+  font-size: 3.3rem;
+}
+
+.tech p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsla(185, 6%, 55%, 1);
+}
+
+.contact-line {
+  background-color: white;
+  height: 1px;
+  width: 3rem;
+}
+
+.contact-me-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+}
+
+.contact i {
+  font-size: 2.5rem;
+  color: white;
+  /* text-shadow: 0 2px 0 hsla(185, 0%, 70%, 1); */
+}
+
+.contact p {
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+.contact-me-header {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.what-is {
+  /* min-height: 100vh; */
+  /* background-color: hsla(127, 50%, 50%, 1); */
+  background-color: black;
+  text-align: center;
+}
+
+.my-work {
+  /* background-color: hsla(127, 50%, 60%, 1); */
+  background-color: black;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+
+.my-work h1,
+.how-it-works h1 {
+  padding: 1rem 0 1rem 0;
+  line-height: 1.5rem;
+  font-family: 'Lato', sans-serif;
+}
+
+.my-work h1:hover,
+.how-it-works h1:hover {
+  cursor: pointer;
+}
+
+/* ========== React Hamburger Slide Menu =================*/
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: absolute;
+  width: 36px;
+  height: 30px;
+  /* left: 36px; */
+  right: 14px;
+  top: 14px;
+  display: none;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: white;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: white;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+  top: 0;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: black;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  /* padding: 0.8em; */
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.menu-item {
+  color: white;
+}
+
+@media only screen and (max-width: 760px) {
+  .account-ready {
+    width: 90vw;
+  }
+
+  .get-started-buttons {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .links p,
+  .links a {
+    display: none;
+  }
+
+  .bm-burger-button {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .big-field {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+/* For MyProfile */
+@media only screen and (max-width: 520px) {
+  .category {
+    width: 95vw;
+    margin: 0.3rem 0 0.3rem 0;
+  }
+
+  .link {
+    width: 95vw;
+    margin: 0.3rem 0 0.3rem 0;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  img.profile-pic {
+    /* width: 85vw; */
+    width: 85vw;
+    margin-bottom: 0.5rem;
+    /* box-sizing: border-box; */
+  }
+
+  .link button {
+    width: 14rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* Browse component */
+
+  .local {
+    flex-direction: column;
+    align-items: center;
+    width: 95vw;
+  }
+
+  .local p {
+    text-align: center;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .mini-pic {
+    width: 85vw;
+    margin-bottom: 0.5rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: 5px;
+    /* border: 1px solid hsla(185, 0%, 80%, 1); */
+    box-shadow: 0px 3px 5px hsla(185, 0%, 80%, 1);
+  }
+
+  .local button {
+    margin: 0.2rem 0.5rem 0 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .link button {
+    width: 12rem;
+    font-size: 0.9rem;
+  }
+
+  .link p {
+    margin: 0 0 0.7rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* .link {
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .link button {
+    width: 10rem;
+    /* margin-left: 0;
+    margin-right: 0; */
+  }
+
+  .link p {
+    /* margin: 0 0 0.5rem 0; */
+    font-size: 0.9rem;
+    /* text-align: center; */
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .local button {
+    font-size: 1rem;
+    width: 8rem;
+  }
+}
+
+/* @media only screen and (max-width: 355px) {
+  .mini-pic {
+    width: 6rem;
+  }
+} */
+
+@media only screen and (max-width: 340px) {
+  .local button {
+    font-size: 1rem;
+    width: 7rem;
+  }
+}
