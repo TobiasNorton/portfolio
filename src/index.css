@@ -23,7 +23,7 @@ code {
 }
 
 .main {
-  background-image: url('/aleksandar-jason-137349-unsplash.jpg');
+  background-image: url('/main-image-small.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -54,7 +54,7 @@ code {
   text-align: center;
 }
 
-.sexy-line {
+.sweet-line {
   background-color: white;
   height: 1px;
   width: 5rem;

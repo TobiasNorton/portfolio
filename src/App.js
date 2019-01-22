@@ -96,7 +96,7 @@ class App extends Component {
             <span>Localist</span>
           </p> */}
           <p className="title">TOBIAS NORTON</p>
-          <div className="sexy-line" />
+          <div className="sweet-line" />
           <p className="caption">Full-stack Web Developer</p>
           {/* <button>Join the Family</button> */}
           {/* <div className="scroll-tab" /> */}
