@@ -75,7 +75,7 @@ class App extends Component {
               </a>
             </Menu>
             <p onClick={this.showAboutMe}>About Me</p>
-            <p onClick={this.showPortfolio}>My Work</p>
+            <p onClick={this.showPortfolio}>Portfolio</p>
             <a href="https://github.com/TobiasNorton" target="_blank">
               GitHub
             </a>
@@ -168,6 +168,7 @@ class App extends Component {
               </a>
             </div>
           </div>
+          <img src={arrow} className="third-arrow bounce" onClick={this.showTechSkills} />
         </section>
 
         <section className="technologies">
