@@ -117,7 +117,7 @@ class App extends Component {
             for roughly 8 years. In recent years I discovered my passion for coding and made the
             life-changing decision to attend the program at Suncoast Developers Guild, a 12-week
             fully-immersive coding bootcamp with emphasis on both the front and back-ends. When I'm
-            not coding you can find me behind my guitar, working on my art or practicing Kung Fu.
+            not coding you can find me playing guitar, working on my art or practicing Kung Fu.
           </p>
           <img src={arrow} className="black-arrow bounce" onClick={this.showPortfolio} />
         </section>
