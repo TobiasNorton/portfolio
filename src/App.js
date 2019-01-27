@@ -10,6 +10,11 @@ class App extends Component {
   //   event.preventDefault()
   // }
 
+  showHome = () => {
+    let home = document.querySelector('.nav-bar')
+    home.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
   showAboutMe = () => {
     let aboutMe = document.querySelector('.about-me')
     aboutMe.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -38,7 +43,7 @@ class App extends Component {
 
           <div className="links">
             <Menu right className="react-burger">
-              <p id="home" className="menu-item">
+              <p id="home" className="menu-item" onClick={this.showHome}>
                 Home
               </p>
               <p id="about" className="menu-item" onClick={this.showAboutMe}>
