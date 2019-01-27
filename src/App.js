@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import arrow from './white_arrow.png'
+import portrait from './711.jpg'
 
 import { slide as Menu } from 'react-burger-menu'
 
@@ -109,7 +110,7 @@ class App extends Component {
           {/* <div className="threshold" /> */}
           <div className="about-me-header">About Me</div>
           <div className="about-me-line" />
-          <img src="./711.jpg" className="portrait" />
+          <img src={portrait} className="portrait" />
           <p>
             Hi, I'm Toby. I am a software developer from St. Petersburg, Florida. I graduated from
             the Savannah College of Art and Design with a BFA in Illustration and did freelance work
@@ -118,6 +119,7 @@ class App extends Component {
             fully-immersive coding bootcamp with emphasis on both the front and back-ends. When I'm
             not coding you can find me behind my guitar, working on my art or practicing Kung Fu.
           </p>
+          <img src={arrow} className="black-arrow bounce" onClick={this.showPortfolio} />
         </section>
 
         <section className="portfolio">

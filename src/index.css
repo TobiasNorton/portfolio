@@ -104,33 +104,6 @@ code {
   margin: 0 0 2rem 0;
 }
 
-/* .hamburger {
-  margin-right: 1rem;
-  display: none;
-}
-
-.hamburger span {
-  width: 40px;
-  height: 6px;
-  background-color: white;
-  display: block;
-  margin: 4px 0 4px 0;
-} */
-
-/* .side-nav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: black;
-  color: black;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-} */
-
 .logo {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -191,6 +164,23 @@ button {
   animation-name: bounce;
   animation-timing-function: ease;
 }
+
+.black-arrow {
+  width: 2.5rem;
+  justify-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* margin: 0 auto 0 auto; */
+  /* transform-origin: bottom; */
+  /* position: absolute; */
+  /* bottom: 30px; */
+  filter: invert(100%);
+}
+
+.black-arrow:hover {
+  cursor: pointer;
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -214,12 +204,33 @@ button {
   min-height: 100vh;
 }
 
-.threshold {
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
+.black-arrow {
+  width: 2.5rem;
+  justify-self: flex-end;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  /* margin: 0 auto 0 auto; */
+  /* transform-origin: bottom; */
+  /* position: absolute; */
+  /* bottom: 30px; */
+  filter: invert(100%);
+}
+
+.black-arrow:hover {
+  cursor: pointer;
+}
+
+/* .threshold {
   background-color: black;
   width: 100%;
   padding: 3rem 0 3rem 0;
   margin: 0;
-}
+} */
 
 .about-me-header {
   font-family: 'Lato', sans-serif;
