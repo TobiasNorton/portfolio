@@ -6,9 +6,9 @@ import portrait from './711.jpg'
 import { slide as Menu } from 'react-burger-menu'
 
 class App extends Component {
-  showSettings(event) {
-    event.preventDefault()
-  }
+  // showSettings(event) {
+  //   event.preventDefault()
+  // }
 
   showAboutMe = () => {
     let aboutMe = document.querySelector('.about-me')
@@ -38,18 +38,18 @@ class App extends Component {
 
           <div className="links">
             <Menu right className="react-burger">
-              <a id="home" className="menu-item" href="/">
+              <p id="home" className="menu-item">
                 Home
-              </a>
-              <a id="about" className="menu-item" onClick={this.showAboutMe}>
+              </p>
+              <p id="about" className="menu-item" onClick={this.showAboutMe}>
                 About Me
-              </a>
-              <a id="contact" className="menu-item" onClick={this.showPortfolio}>
+              </p>
+              <p id="contact" className="menu-item" onClick={this.showPortfolio}>
                 Portfolio
-              </a>
-              <a id="contact" className="menu-item" onClick={this.showTechSkills}>
+              </p>
+              <p id="contact" className="menu-item" onClick={this.showTechSkills}>
                 Tech Skills
-              </a>
+              </p>
               <a
                 id="contact"
                 className="menu-item"
@@ -66,13 +66,13 @@ class App extends Component {
               >
                 LinkedIn
               </a>
-              <a
-                onClick={this.showSettings}
-                className="menu-item--small"
+              <p
+                // onClick={this.showSettings}
+                className="menu-item"
                 onClick={this.showContactMe}
               >
                 Contact
-              </a>
+              </p>
             </Menu>
             <p onClick={this.showAboutMe}>About Me</p>
             <p onClick={this.showPortfolio}>Portfolio</p>
@@ -103,6 +103,7 @@ class App extends Component {
           {/* <div className="scroll-tab" /> */}
           {/* <img src={arrow} className="arrow" /> */}
           {/* <i class="fas fa-sort-down" /> */}
+          <div className="bottom-space" />
           <img src={arrow} className="arrow bounce" onClick={this.showAboutMe} />
         </section>
 
@@ -209,7 +210,7 @@ class App extends Component {
           </div>
         </section>
         <section className="contact-me">
-          <div className="contact-me-header">Contact Me</div>
+          <div className="contact-me-header">Thanks for stopping in!</div>
           <div className="contact-line" />
           <div>
             <div className="contact-me-container">
