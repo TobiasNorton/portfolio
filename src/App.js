@@ -6,10 +6,6 @@ import portrait from './711.jpg'
 import { slide as Menu } from 'react-burger-menu'
 
 class App extends Component {
-  // showSettings(event) {
-  //   event.preventDefault()
-  // }
-
   showHome = () => {
     let home = document.querySelector('.nav-bar')
     home.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -71,11 +67,7 @@ class App extends Component {
               >
                 LinkedIn
               </a>
-              <p
-                // onClick={this.showSettings}
-                className="menu-item"
-                onClick={this.showContactMe}
-              >
+              <p className="menu-item" onClick={this.showContactMe}>
                 Contact
               </p>
             </Menu>
@@ -88,42 +80,28 @@ class App extends Component {
               LinkedIn
             </a>
           </div>
-          {/* <div className="hamburger">
-            <span />
-            <span />
-            <span />
-          </div> */}
         </nav>
 
         <section className="main">
-          {/* <p className="welcome">
-            Welcome to
-            <br />
-            <span>Localist</span>
-          </p> */}
           <p className="title">TOBIAS NORTON</p>
           <div className="sweet-line" />
           <p className="caption">Full-stack Web Developer</p>
-          {/* <button>Join the Family</button> */}
-          {/* <div className="scroll-tab" /> */}
-          {/* <img src={arrow} className="arrow" /> */}
-          {/* <i class="fas fa-sort-down" /> */}
           <div className="bottom-space" />
           <img src={arrow} className="arrow bounce" onClick={this.showAboutMe} />
         </section>
 
         <section className="about-me">
-          {/* <div className="threshold" /> */}
           <div className="about-me-header">About Me</div>
           <div className="about-me-line" />
           <img src={portrait} className="portrait" />
           <p>
             Hi, I'm Toby. I am a software developer from St. Petersburg, Florida. I graduated from
-            the Savannah College of Art and Design with a BFA in Illustration and did freelance work
-            for roughly 8 years. In recent years I discovered my passion for coding and made the
-            life-changing decision to attend the program at Suncoast Developers Guild, a 12-week
-            fully-immersive coding bootcamp with emphasis on both the front and back-ends. When I'm
-            not coding you can find me playing guitar, working on my art or practicing Kung Fu.
+            the Savannah College of Art and Design with a BFA in Illustration and did freelance
+            illustration and design work for roughly 8 years. In recent years I discovered my
+            passion for coding and made the life-changing decision to attend the program at Suncoast
+            Developers Guild, a 12-week fully-immersive coding bootcamp with emphasis on both the
+            front and back-ends of web development. When I'm not coding you can find me working on a
+            painting or playing guitar way too loud.
           </p>
           <img src={arrow} className="black-arrow bounce" onClick={this.showPortfolio} />
         </section>
@@ -133,8 +111,8 @@ class App extends Component {
           <div className="about-me-line" />
           <div className="thumbnail-container">
             <div>
-              <a href="http://tobiasnorton-favorite-artists.surge.sh/" target="_blank">
-                <img src="./favorite-artists-2.jpg" className="thumbnail" alt="Favorite Artists" />
+              <a href="http://in-the-news.surge.sh/" target="_blank">
+                <img src="./in-the-news.jpg" className="thumbnail" alt="HSL Color Picker" />
               </a>
             </div>
             <div>
@@ -147,6 +125,12 @@ class App extends Component {
                 <img src="./hsl-color-2.jpg" className="thumbnail" alt="HSL Color Picker" />
               </a>
             </div>
+            <div>
+              <a href="http://tobiasnorton-favorite-artists.surge.sh/" target="_blank">
+                <img src="./favorite-artists-2.jpg" className="thumbnail" alt="Favorite Artists" />
+              </a>
+            </div>
+
             <div>
               <a href="http://tobiasnorton-minesweeper.surge.sh/" target="_blank">
                 <img src="./minesweeper.jpg" className="thumbnail" alt="Minesweeper" />
@@ -185,9 +169,6 @@ class App extends Component {
               <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1" />
               <p className="tech-caption">Ruby</p>
             </div>
-            {/* <div className="tech">
-              <p className="rails-caption">Rails</p>
-            </div> */}
             <div className="tech">
               <i class="fab fa-react" />
               <p className="tech-caption">React.js</p>
@@ -204,14 +185,6 @@ class App extends Component {
               <i class="fab fa-html5" />
               <p className="tech-caption">HTML5</p>
             </div>
-            {/* <div className="tech">
-              <i class="fab fa-html5" />
-              <p className="tech-caption">HTML5</p>
-            </div> */}
-            {/* <div className="tech">
-              <i class="fab fa-adobe" />
-              <p className="tech-caption">Adobe</p>
-            </div> */}
           </div>
         </section>
         <section className="contact-me">
@@ -221,24 +194,17 @@ class App extends Component {
             <div className="contact-me-container">
               <div className="contact">
                 <i class="fas fa-envelope" />
-                {/* <p>Email</p> */}
                 <p>tobiaswnorton@gmail.com</p>
               </div>
-              {/* <div className="contact">
-                <i class="fab fa-github" />
-                <p>TobiasNorton</p>
-              </div> */}
               <div className="contact">
                 <a href="https://www.linkedin.com/in/tobiasnorton" target="_blank">
                   <i class="fab fa-linkedin" />
                 </a>
-                {/* <p>LinkedIn</p> */}
                 <p>linkedin.com/in/tobiasnorton</p>
                 <div />
               </div>
               <div className="contact">
                 <i class="fas fa-phone" />
-                {/* <p>Phone</p> */}
                 <p>(941)-587-9667</p>
               </div>
             </div>
