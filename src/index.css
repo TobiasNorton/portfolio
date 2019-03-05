@@ -175,7 +175,7 @@ h4 {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   filter: invert(100%);
-  margin-bottom: 0rem;
+  margin-bottom: 1.7rem;
 }
 
 .black-arrow:hover {
