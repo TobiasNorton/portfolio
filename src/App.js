@@ -116,7 +116,7 @@ class App extends Component {
               </a>
             </div>
             <div>
-              <a href="https://localist-app.herokuapp.com/">
+              <a href="https://localist-app.herokuapp.com/" target="_blank">
                 <img src="./localist.jpg" className="thumbnail" alt="Localist" />
               </a>
             </div>
