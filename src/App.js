@@ -111,13 +111,25 @@ class App extends Component {
           <div className="about-me-line" />
           <div className="thumbnail-container">
             <div>
+              <a href="https://localist-app.herokuapp.com/" target="_blank">
+                <img src="./localist.jpg" className="thumbnail" alt="Localist" />
+              </a>
+            </div>
+            <div>
               <a href="http://in-the-news.surge.sh/" target="_blank">
                 <img src="./in-the-news.jpg" className="thumbnail" alt="HSL Color Picker" />
               </a>
             </div>
+
             <div>
-              <a href="https://localist-app.herokuapp.com/" target="_blank">
-                <img src="./localist.jpg" className="thumbnail" alt="Localist" />
+              <a href="https://greengoals.herokuapp.com/" target="_blank">
+                <img src="./greengoals.jpg" className="thumbnail" alt="Localist" />
+              </a>
+            </div>
+
+            <div>
+              <a href="http://tobiasnorton-favorite-artists.surge.sh/" target="_blank">
+                <img src="./favorite-artists-2.jpg" className="thumbnail" alt="Favorite Artists" />
               </a>
             </div>
             <div>
@@ -125,12 +137,6 @@ class App extends Component {
                 <img src="./hsl-color-2.jpg" className="thumbnail" alt="HSL Color Picker" />
               </a>
             </div>
-            <div>
-              <a href="http://tobiasnorton-favorite-artists.surge.sh/" target="_blank">
-                <img src="./favorite-artists-2.jpg" className="thumbnail" alt="Favorite Artists" />
-              </a>
-            </div>
-
             <div>
               <a href="http://tobiasnorton-minesweeper.surge.sh/" target="_blank">
                 <img src="./minesweeper.jpg" className="thumbnail" alt="Minesweeper" />
@@ -149,12 +155,6 @@ class App extends Component {
             <div>
               <a href="http://tobiasnorton-star-wars-characters.surge.sh/" target="_blank">
                 <img src="./star-wars.jpg" className="thumbnail" alt="Star Wars Characters" />
-              </a>
-            </div>
-            <div>
-              {' '}
-              <a href="http://tobiasnorton-made-in-1989.surge.sh/" target="_blank">
-                <img src="./1989.jpg" className="thumbnail" alt="Movies from 1989" />
               </a>
             </div>
           </div>
