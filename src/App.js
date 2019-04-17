@@ -123,7 +123,7 @@ class App extends Component {
 
             <div>
               <a href="https://greengoals.herokuapp.com/" target="_blank">
-                <img src="./greengoals.jpg" className="thumbnail" alt="Localist" />
+                <img src="./GreenGoals.jpg" className="thumbnail" alt="GreenGoals" />
               </a>
             </div>
 
