@@ -164,6 +164,7 @@ h4 {
 }
 
 .about-me {
+  min-height: 100vh;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -207,7 +208,7 @@ h4 {
 .about-me p {
   color: black;
   font-family: 'Lato', sans-serif;
-  max-width: 32rem;
+  max-width: 700px;
   text-align: center;
   margin-bottom: 5rem;
   margin-left: 3rem;

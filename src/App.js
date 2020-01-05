@@ -94,14 +94,15 @@ class App extends Component {
           <div className="about-me-header">About Me</div>
           <div className="about-me-line" />
           <img src={portrait} className="portrait" />
-          <p>
+          <p className="about-me-body">
             Hi, I'm Toby. I am a software developer from St. Petersburg, Florida. I graduated from
             the Savannah College of Art and Design with a BFA in Illustration and did freelance
             illustration and design work for roughly 8 years. In recent years I discovered my
             passion for coding and made the life-changing decision to attend the program at Suncoast
             Developers Guild, a 12-week fully-immersive coding bootcamp with emphasis on both the
-            front and back-ends of web development. When I'm not coding you can find me working on a
-            painting or playing guitar way too loud.
+            front and back-ends of web development. I currently work in Tampa as a front-end
+            software developer in JavaScript, React and Redux. When I'm not coding you can find me
+            working on a painting or playing guitar way too loud.
           </p>
           <img src={arrow} className="black-arrow bounce" onClick={this.showPortfolio} />
         </section>
@@ -166,16 +167,16 @@ class App extends Component {
           <div className="tech-line" />
           <div className="tech-container">
             <div className="tech">
-              <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1" />
-              <p className="tech-caption">Ruby</p>
+              <i class="fab fa-js-square" />
+              <p className="tech-caption">JavaScript</p>
             </div>
             <div className="tech">
               <i class="fab fa-react" />
               <p className="tech-caption">React.js</p>
             </div>
             <div className="tech">
-              <i class="fab fa-js-square" />
-              <p className="tech-caption">JavaScript</p>
+              <i class="fas fa-4x fa-gem text-primary mb-3 sr-icon-1" />
+              <p className="tech-caption">Ruby</p>
             </div>
             <div className="tech">
               <i class="fab fa-css3-alt" />
@@ -192,6 +193,10 @@ class App extends Component {
           <div className="contact-line" />
           <div>
             <div className="contact-me-container">
+              <div className="contact">
+                <i class="fab fa-github"></i>
+                <p>github.com/TobiasNorton</p>
+              </div>
               <div className="contact">
                 <i class="fas fa-envelope" />
                 <p>tobiaswnorton@gmail.com</p>
