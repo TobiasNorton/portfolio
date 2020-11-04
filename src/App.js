@@ -116,11 +116,6 @@ class App extends Component {
                 <img src="./localist.jpg" className="thumbnail" alt="Localist" />
               </a>
             </div>
-            <div>
-              <a href="http://in-the-news.surge.sh/" target="_blank">
-                <img src="./in-the-news.jpg" className="thumbnail" alt="HSL Color Picker" />
-              </a>
-            </div>
 
             <div>
               <a href="https://greengoals.herokuapp.com/" target="_blank">
@@ -194,7 +189,7 @@ class App extends Component {
           <div>
             <div className="contact-me-container">
               <div className="contact">
-                <i class="fab fa-github"></i>
+                <i class="fab fa-github" />
                 <p>github.com/TobiasNorton</p>
               </div>
               <div className="contact">
